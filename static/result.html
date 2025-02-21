@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Image</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+    <div class="result">
+    <div class="container">
+        <h2>Processed Image</h2>
+        <div class="image-container">
+            <img src="{{ processed_image }}" alt="Processed Image">
+        </div>
+        <div class="button-container">
+            <a href="{{ processed_image }}" download class="btn">Download</a>
+            <a href="/" class="btn">Upload Another</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>num_art</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+    <div class="introduction">
+    <div class="content">
+        <div class="head">
+            <h1>NUM_ART</h1>
+        </div>
+        <div class="intro_img">
+            <img src="/static/template/num_art.png" alt="num_art">
+        </div>
+    </div>
+    <div class="intro_p">
+            <p>Transform your images into numerical art.<br>
+               A platform designed for users with an artistic perspective, transforming images into numerically generated visuals.<br>
+               Whether it’s Euler’s number, Pi, or your favorite mathematical constant, simply upload an image and download its transformed version.
+            </p>
+    </div>
+</div>
+
+    <div class="utility">
+
+    <div class="container">
+    <h2>Upload Image</h2>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <label for="choice">Choose Text File:</label>
+        <select name="choice">
+            <option value="pi">Pi Numbers</option>
+            <option value="e">Euler numbers</option>
+        </select>
+        <button type="submit">Upload</button>
+    </form>
+    </div>
+
+    </div>
+
+    <div class="base_content">
+
+        <h2>Wait for more updates... :)</h2>
+        
+    </div>
+</body>
+</html>
