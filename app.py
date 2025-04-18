@@ -55,3 +55,9 @@ async def upload_image(request: Request, image: UploadFile = File(...), choice: 
         )
     else:
         return {"error": "Processing failed"}
+
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.0", port=10000)
+
